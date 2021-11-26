@@ -1,34 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Ping coming soon page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <div class="Container">
+    <div class="Card">
+      <div class="Card__logo">
+        <img src="./images/logo.svg" alt="" class="Card__logo__img">
+      </div>
+      <h2 class="Card__title">We are launching <span>soon!</span></h2>
+      <p class="Card__description">Subscribe and get notified</p>
+      <input class="Card__input__text" type="text" name="Email" id="Email" placeholder="Your email address" required>
+      <button class="Card__input__button" type="submit">Notify Me</button>
+      <div class="Card__image__container">
+        <img src="./images/illustration-dashboard.png" alt="" class="Card__image">
+      </div>
+    </div>
+    <!-- &copy; Copyright Ping. All rights reserved. -->
+    <footer class="Footer">
+      <ul class="Sociales">
+        <li class="Sociales__item"><a class="Sociales__link" href="#"><img class="Sociales__icon" src="./images/icon-facebook.svg" alt=""></a></li>
+        <li class="Sociales__item"><a class="Sociales__link" href="#"><img class="Sociales__icon" src="./images/icon-twitter.svg" alt=""></a></li>
+        <li class="Sociales__item"><a class="Sociales__link" href="#"><img class="Sociales__icon" src="./images/icon-instagram.svg" alt=""></a></li>
+      </ul>
+      <p class="Footer__attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Alexander Chip</a>.
+      </p>
+    </footer>
+  </div>
 </body>
 </html>

@@ -1,0 +1,147 @@
+:root {
+  --color-blue: hsl(223, 87%, 63%);
+  --color-pale-blue: hsl(223, 100%, 88%);
+  --color-ligth-red: hsl(354, 100%, 66%);
+
+  --color-gray: hsl(0, 0%, 59%);
+  --color-very-dark-blue: hsl(209, 33%, 12%);
+
+  --color-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Libre Franklin', sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.Container {
+  height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Card */
+
+.Card {
+  text-align: center;
+  width: 100%;
+}
+
+.Card__logo {
+  width: 50px;
+  margin: 0 auto;
+}
+
+.Card__title {
+  color: var(--color-gray)
+}
+
+.Card__title span {
+  color: var(--color-very-dark-blue);
+  font-size: .9em;
+}
+
+.Card__description {
+  font-size: .7em;
+  margin-bottom: 36px;
+}
+
+.Card__input__text,
+.Card__input__button {
+  display: block;
+  padding: 1.2em;
+  width: 100%;
+  border-radius: 2em;
+}
+
+.Card__input__text{
+  margin-bottom: 23px;
+  border: 1px solid var(--color-blue);
+  color: var(--color-blue);
+}
+
+.Card__input__button {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-bottom: 50px;
+  box-shadow: 0px 10px 12px 0px rgba(0, 0, 255, .2);
+}
+
+.Card__image__container {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+/* Footer */
+
+.Footer {
+  text-align: center;
+}
+
+.Sociales {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.Sociales__item {
+  width: 40px;
+  height: 40px;
+  margin-right: 30px;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.Sociales__item:first-child .Sociales__icon {
+  width: 40%;
+}
+
+
+.Sociales__icon {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.Sociales__link {
+  /* width: 100%; */
+}
+
+.Footer__attribution {
+  font-size: .7em;
+  color: var(--color-gray);
+}

@@ -45,7 +45,6 @@ ul {
 }
 
 .Container {
-  height: 80vh;
   width: 80%;
   margin: 0 auto;
 }
@@ -53,8 +52,10 @@ ul {
 /* Card */
 
 .Card {
+  padding: 1rem 0;
   text-align: center;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .Card__logo {
@@ -97,29 +98,33 @@ ul {
   border: none;
   outline: none;
   margin-bottom: 50px;
+  cursor: pointer;
   box-shadow: 0px 10px 12px 0px rgba(0, 0, 255, .2);
 }
 
 .Card__image__container {
   width: 100%;
-  margin-bottom: 60px;
 }
 
 /* Footer */
 
 .Footer {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 1em;
 }
 
 .Sociales {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .Sociales__item {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin-right: 30px;
   border: 1px solid var(--color-blue);
   border-radius: 50%;
@@ -128,12 +133,12 @@ ul {
 }
 
 .Sociales__item:first-child .Sociales__icon {
-  width: 40%;
+  width: 30%;
 }
 
 
 .Sociales__icon {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -144,4 +149,9 @@ ul {
 .Footer__attribution {
   font-size: .7em;
   color: var(--color-gray);
+  /* margin-bottom: 20px; */
+}
+
+.Footer__attribution a {
+  color: var(--color-blue);
 }
